@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>741</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>741</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.489455, y1:0.153, x2:0.489, y2:1, stop:0 rgba(109, 140, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
+    </property>
+    <property name="text">
+     <string>Sign to Speech And Speech To Sign Transfromation</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>741</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.489, y1:0.954136, x2:0.506045, y2:0, stop:0 rgba(109, 140, 255, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signtospeech">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>TImes New Roman</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#signtospeech{
+padding-left:-40px;
+color:black;
+background-color:#fefefe;
+border: 2px solid #58e870; border-radius:30px;
+font: 12pt &quot;TImes New Roman&quot;;
+background-image:url(&quot;icons/sent.png&quot;);
+background-repeat:none;
+}
+QPushButton#signtospeech:hover
+{
+   background-color:magenta;
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>                          Sign-Speech</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="speechtosign">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>70</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>TImes New Roman</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#speechtosign{
+padding-left:-40px;
+color:black;
+background-color:#fefefe;
+border: 2px solid #58e870; border-radius:30px;
+font: 12pt &quot;TImes New Roman&quot;;
+background-image:url(&quot;icons/scan.png&quot;);
+background-repeat:none;
+}
+QPushButton#speechtosign:hover
+{
+   background-color:magenta;
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>                         Speech-sign</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit_button">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>2</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#exit_button{
+background-image:url(&quot;icons/quit.png&quot;);
+background-repeat:none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(14, 26, 255);</string>
+    </property>
+    <property name="text">
+     <string>Speech To Sign</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_info">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>261</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.54, x2:1, y2:0.562, stop:0 rgba(255, 140, 173, 255), stop:1 rgba(255, 255, 255, 255));
+border: 3px solid #4ba1df;</string>
+    </property>
+    <property name="text">
+     <string>Click Record Button to start 
+recording  speech</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_help">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>681</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.523, x2:0.063, y2:0.584818, stop:0 rgba(255, 140, 173, 255), stop:1 rgba(255, 255, 255, 255));
+border: 3px solid #4ba1df;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="record">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>540</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>TImes New Roman</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#record{
+color:black;
+background-color:#fefefe;
+border: 2px solid #58e870; border-radius:15px;
+font: 12pt &quot;TImes New Roman&quot;;
+background-repeat:none;
+}
+QPushButton#record:hover
+{
+   background-color:magenta;
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Record Audio</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="help_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>540</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#help_2{
+color:black;
+background-color:#fefefe;
+border: 2px solid #58e870; border-radius:15px;
+font: 12pt &quot;TImes New Roman&quot;;
+background-repeat:none;
+}
+QPushButton#help_2:hover
+{
+   background-color:magenta;
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>540</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#clear{
+color:black;
+background-color:#fefefe;
+border: 2px solid #58e870; border-radius:15px;
+font: 12pt &quot;TImes New Roman&quot;;
+background-repeat:none;
+}
+QPushButton#clear:hover
+{
+   background-color:magenta;
+	color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="record_sts">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(36, 17, 255);</string>
+    </property>
+    <property name="text">
+     <string>Recording Status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_pred">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>230</y>
+      <width>401</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.523, x2:0.063, y2:0.584818, stop:0 rgba(255, 140, 173, 255), stop:1 rgba(255, 255, 255, 255));
+border: 3px solid #4ba1df;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="record_sts_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>210</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(36, 17, 255);</string>
+    </property>
+    <property name="text">
+     <string>Predicted Text</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
