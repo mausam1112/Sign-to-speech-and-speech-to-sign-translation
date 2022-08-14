@@ -1,7 +1,5 @@
-__author__ = 'Rupesh Poudel'
-__SourcerepoLink__ = 'https://github.com/rrupeshh/Simple-Sign-Language-Detector'
 
-# Part 1 - Building the CNN
+# Part 1 - Building the CNN  
 #importing the Keras libraries and packages
 from keras.models import Sequential
 from keras.layers import Convolution2D
@@ -13,7 +11,7 @@ from keras import optimizers
 # Initialing the CNN
 classifier = Sequential()
 
-# Step 1 - Convolutio Layer 
+# Step 1 - Convolution Layer 
 classifier.add(Convolution2D(32, 3,  3, input_shape = (64, 64, 3), activation = 'relu'))
 
 #step 2 - Pooling
@@ -34,13 +32,13 @@ classifier.add(Flatten())
 #Step 4 - Full Connection
 classifier.add(Dense(256, activation = 'relu'))
 classifier.add(Dropout(0.5))
-classifier.add(Dense(26, activation = 'softmax'))
+classifier.add(Dense(27, activation = 'softmax'))
 
 #Compiling The CNN
 classifier.compile(
-              optimizer = optimizers.SGD(lr = 0.01),
+              optimizer = optimizers.SGD(lr = 0.001),
               loss = 'categorical_crossentropy',
-              metrics = ['accuracy'])
+              metrics = ['acc'])
 
 #Part 2 Fittting the CNN to the image
 from keras.preprocessing.image import ImageDataGenerator
@@ -67,14 +65,14 @@ test_set = test_datagen.flow_from_directory(
 model = classifier.fit_generator(
         training_set,
         steps_per_epoch=800,
-        epochs=25,
+        epochs=20,
         validation_data = test_set,
         validation_steps = 6500
       )
 
-'''#Saving the model
+#Saving the model
 import h5py
-classifier.save('Trained_model.h5')'''
+classifier.save('Trained_model.h5')
 
 print(model.history.keys())
 import matplotlib.pyplot as plt
